@@ -1,0 +1,13 @@
+#!/bin/bash
+
+(
+
+cd `dirname $0`
+
+root_dir=`git rev-parse --show-toplevel`
+
+dart --snapshot="${root_dir}/dup-remover.dart" ${root_dir}/bin/main.dart
+
+dart ${root_dir}/dup-remover.dart --help
+
+)

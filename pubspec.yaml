@@ -1,0 +1,16 @@
+name: duplicate_remover
+description: A sample command-line application.
+# version: 1.0.0
+# homepage: https://www.example.com
+# author: Your Name <email@example.com>
+
+environment:
+  sdk: '>=2.0.0-dev.68.0 <3.0.0'
+
+dependencies:
+  args: ^1.4.4
+  csv_parser:
+    path: /home/roaidenfalcon/WebstormProjects/csv_parser
+
+dev_dependencies:
+  test: ^1.0.0
